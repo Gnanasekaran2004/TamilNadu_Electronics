@@ -40,8 +40,8 @@ document.body.style.overflow = 'hidden';
       this.y = initial ? Math.random() * H : H + 10;
       this.r = Math.random() * 1.5 + 0.3;
       this.speed = Math.random() * 0.5 + 0.2;
-      this.opacity = Math.random() * 0.5 + 0.1;
-      this.hue = Math.random() > 0.7 ? 280 : 200; // purple vs blue
+      this.opacity = Math.random() * 0.45 + 0.08;
+      this.hue = Math.random() > 0.65 ? 0 : 20; // deep red vs orange-red
     }
 
     update() {
@@ -52,7 +52,7 @@ document.body.style.overflow = 'hidden';
     draw() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-      ctx.fillStyle = `hsla(${this.hue}, 100%, 65%, ${this.opacity})`;
+      ctx.fillStyle = `hsla(${this.hue}, 90%, 60%, ${this.opacity})`;
       ctx.fill();
     }
   }
@@ -300,7 +300,7 @@ function initCursorGlow() {
     position: fixed;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(0,178,255,0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(232,25,44,0.07) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);

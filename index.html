@@ -1,0 +1,608 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TamilNadu Electronics – Your one-stop destination for fans, switches, wires, LED lights, home appliances & more in Vellore, Tamil Nadu." />
+  <meta name="keywords" content="TamilNadu Electronics, Electrical Store Vellore, Fans, Switches, Wires, LED Lights, Home Appliances, Switch Gear, Vellore" />
+  <meta name="author" content="TamilNadu Electronics" />
+  <meta property="og:title" content="TamilNadu Electronics | Premium Electrical Solutions" />
+  <meta property="og:description" content="Futuristic electrical store with premium products. Fans, switches, wires, LED lights, home appliances and more." />
+  <title>TamilNadu Electronics | Premium Electrical Solutions – Vellore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== PARTICLE CANVAS ===== -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-icon">⚡</span>
+        <span class="loader-text">TamilNadu Electronics</span>
+      </div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <div class="logo-icon">⚡</div>
+        <div class="logo-text">
+          <span class="logo-main">TamilNadu</span>
+          <span class="logo-sub">Electronics</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active" id="nav-home">Home</a>
+        <a href="#about" class="nav-link" id="nav-about">About</a>
+        <a href="#products" class="nav-link" id="nav-products">Products</a>
+        <a href="#brands" class="nav-link" id="nav-brands">Brands</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+        <a href="#contact" class="nav-cta" id="nav-enquiry-btn">Get Quote</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-img" style="background-image: url('assets/images/hero_banner.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">⚡ Vellore's Premium Electrical Store</div>
+      <h1 class="hero-title">
+        Power Your<br />
+        <span class="gradient-text">Future</span> With Us
+      </h1>
+      <p class="hero-subtitle">
+        From ceiling fans to circuit breakers — TamilNadu Electronics brings you
+        top-quality electrical products at unbeatable prices. One step before your dream.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary" id="hero-explore-btn">
+          <span>Explore Products</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-outline" id="hero-contact-btn">Get Free Quote</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Legacy</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5000">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="200">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Products</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Top Brands</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE TICKER ===== -->
+  <div class="marquee-wrapper" aria-label="Product categories">
+    <div class="marquee-track">
+      <span>⚡ Ceiling Fans</span>
+      <span>💡 LED Lights</span>
+      <span>🔌 Switches & Sockets</span>
+      <span>🔧 Wires & Cables</span>
+      <span>🛁 Bathroom Fittings</span>
+      <span>🍳 Kitchen Appliances</span>
+      <span>🔒 Switch Gears</span>
+      <span>♨️ Water Heaters</span>
+      <span>🌀 Exhaust Fans</span>
+      <span>🏗️ Plumbing & Hardware</span>
+      <span>⚡ Ceiling Fans</span>
+      <span>💡 LED Lights</span>
+      <span>🔌 Switches & Sockets</span>
+      <span>🔧 Wires & Cables</span>
+      <span>🛁 Bathroom Fittings</span>
+      <span>🍳 Kitchen Appliances</span>
+      <span>🔒 Switch Gears</span>
+      <span>♨️ Water Heaters</span>
+      <span>🌀 Exhaust Fans</span>
+      <span>🏗️ Plumbing & Hardware</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-img-wrapper">
+            <img src="assets/images/store_interior.png" alt="TamilNadu Electronics Showroom" class="about-img-main" loading="lazy" />
+            <div class="about-img-badge">
+              <span class="badge-year">50+</span>
+              <span class="badge-label">Years of Trust</span>
+            </div>
+            <div class="about-img-card">
+              <img src="assets/images/about_section.png" alt="TamilNadu Electronics Team" class="about-img-secondary" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="about-content-col">
+          <div class="section-tag">Who We Are</div>
+          <h2 class="section-title">Vellore's Most Trusted <span class="gradient-text">Electrical Partner</span></h2>
+          <p class="about-desc">
+            TamilNadu Electronics is an electrical components and home appliances company with a strong focus on customer satisfaction.
+            We provide high-quality branded home appliances through our showroom, where our range of products and prices are unbeatable.
+          </p>
+          <p class="about-desc">
+            We have a large showroom in Vellore where we display all our products. Customers can come and view the products and there is
+            plenty of seating. We supply several colleges, mini-hospitals, apartment complexes and builders with electrical fixtures — and
+            we are also a major supplier for some of the biggest builders in the district.
+          </p>
+          <div class="about-features">
+            <div class="feature-chip" id="feature-quality">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Best Quality Products
+            </div>
+            <div class="feature-chip" id="feature-price">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Unbeatable Prices
+            </div>
+            <div class="feature-chip" id="feature-service">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Expert Guidance
+            </div>
+            <div class="feature-chip" id="feature-brands">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Top Brands
+            </div>
+          </div>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Company</span>
+              <span class="info-value">TamilNadu Electronics</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Contact Person</span>
+              <span class="info-value">Jain Kailash Bafna</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone</span>
+              <span class="info-value">+91 416 2253321</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Mobile</span>
+              <span class="info-value">+91 94431 69360</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section id="products" class="section products-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What We Offer</div>
+        <h2 class="section-title">Our <span class="gradient-text">Premium Products</span></h2>
+        <p class="section-desc">Explore our wide range of high-quality electrical products from India's top brands.</p>
+      </div>
+
+      <!-- Product Filter Tabs -->
+      <div class="product-filters" role="tablist" aria-label="Product category filters">
+        <button class="filter-btn active" data-filter="all" id="filter-all" role="tab" aria-selected="true">All Products</button>
+        <button class="filter-btn" data-filter="fans" id="filter-fans" role="tab" aria-selected="false">Fans</button>
+        <button class="filter-btn" data-filter="wiring" id="filter-wiring" role="tab" aria-selected="false">Wiring</button>
+        <button class="filter-btn" data-filter="switches" id="filter-switches" role="tab" aria-selected="false">Switches</button>
+        <button class="filter-btn" data-filter="lights" id="filter-lights" role="tab" aria-selected="false">Lights</button>
+        <button class="filter-btn" data-filter="appliances" id="filter-appliances" role="tab" aria-selected="false">Appliances</button>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <!-- Ceiling Fan -->
+        <div class="product-card" data-category="fans" id="product-ceiling-fan">
+          <div class="product-img-wrap">
+            <img src="assets/images/ceiling_fan.png" alt="Ceiling Fan" loading="lazy" />
+            <div class="product-overlay">
+              <a href="#contact" class="product-enquiry-btn">Enquire Now</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category-tag">Fans</div>
+            <h3 class="product-name">Ceiling Fans</h3>
+            <p class="product-desc">Energy-efficient ceiling fans from Crompton, Havells, Orient & more.</p>
+            <div class="product-brands">
+              <span>Crompton</span><span>Havells</span><span>Orient</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wires & Cables -->
+        <div class="product-card" data-category="wiring" id="product-wires">
+          <div class="product-img-wrap">
+            <img src="assets/images/wires_cables.png" alt="Wires and Cables" loading="lazy" />
+            <div class="product-overlay">
+              <a href="#contact" class="product-enquiry-btn">Enquire Now</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category-tag">Wiring</div>
+            <h3 class="product-name">Wires & Cables</h3>
+            <p class="product-desc">ISI-marked, fire-resistant wires and cables from Finolex, Polycab & more.</p>
+            <div class="product-brands">
+              <span>Finolex</span><span>Polycab</span><span>Havells</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Switches -->
+        <div class="product-card" data-category="switches" id="product-switches">
+          <div class="product-img-wrap">
+            <img src="assets/images/switches.png" alt="Electrical Switches" loading="lazy" />
+            <div class="product-overlay">
+              <a href="#contact" class="product-enquiry-btn">Enquire Now</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category-tag">Switches</div>
+            <h3 class="product-name">Switches & Sockets</h3>
+            <p class="product-desc">Modern modular switches and sockets in elegant designs for every home.</p>
+            <div class="product-brands">
+              <span>Legrand</span><span>Anchor</span><span>GM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LED Lights -->
+        <div class="product-card" data-category="lights" id="product-lights">
+          <div class="product-img-wrap">
+            <img src="assets/images/led_lights.png" alt="LED Lights" loading="lazy" />
+            <div class="product-overlay">
+              <a href="#contact" class="product-enquiry-btn">Enquire Now</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category-tag">Lights</div>
+            <h3 class="product-name">LED Lights & Fittings</h3>
+            <p class="product-desc">Energy-saving LED solutions — panel lights, spotlights, strip lights & more.</p>
+            <div class="product-brands">
+              <span>Philips</span><span>Syska</span><span>Havells</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Switchgear -->
+        <div class="product-card" data-category="switches" id="product-switchgear">
+          <div class="product-img-wrap">
+            <img src="assets/images/switchgear.png" alt="Switch Gear" loading="lazy" />
+            <div class="product-overlay">
+              <a href="#contact" class="product-enquiry-btn">Enquire Now</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category-tag">Switches</div>
+            <h3 class="product-name">Switch Gears & MCBs</h3>
+            <p class="product-desc">High-quality MCBs, distribution boards and safety switches for your premises.</p>
+            <div class="product-brands">
+              <span>Schneider</span><span>Legrand</span><span>L&T</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Home Appliances -->
+        <div class="product-card" data-category="appliances" id="product-appliances">
+          <div class="product-img-wrap">
+            <img src="assets/images/home_appliances.png" alt="Home Appliances" loading="lazy" />
+            <div class="product-overlay">
+              <a href="#contact" class="product-enquiry-btn">Enquire Now</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category-tag">Appliances</div>
+            <h3 class="product-name">Home Appliances</h3>
+            <p class="product-desc">Chimneys, cook tops, water heaters, geysers and kitchen appliances.</p>
+            <div class="product-brands">
+              <span>Faber</span><span>Glen</span><span>Venus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Why Us?</div>
+        <h2 class="section-title">Why Choose <span class="gradient-text">TamilNadu Electronics</span>?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" id="why-quality">
+          <div class="why-icon">🏆</div>
+          <h3>Best Quality</h3>
+          <p>We stock only ISI-certified, branded products that meet the highest quality standards.</p>
+        </div>
+        <div class="why-card" id="why-price">
+          <div class="why-icon">💰</div>
+          <h3>Best Prices</h3>
+          <p>Our buying power means we pass on wholesale savings directly to you — always.</p>
+        </div>
+        <div class="why-card" id="why-trust">
+          <div class="why-icon">🤝</div>
+          <h3>50+ Years Trust</h3>
+          <p>A family business founded by Mr. Dhawanlal Bafna Jain with decades of industry legacy.</p>
+        </div>
+        <div class="why-card" id="why-showroom">
+          <div class="why-icon">🏪</div>
+          <h3>Large Showroom</h3>
+          <p>Visit our spacious Vellore showroom to touch, feel, and choose from hundreds of products.</p>
+        </div>
+        <div class="why-card" id="why-brands">
+          <div class="why-icon">⭐</div>
+          <h3>Top Brands</h3>
+          <p>We carry all leading brands — Havells, Crompton, Philips, Finolex, Legrand and more.</p>
+        </div>
+        <div class="why-card" id="why-service">
+          <div class="why-icon">📞</div>
+          <h3>Expert Support</h3>
+          <p>Our knowledgeable team guides you to the right product for your exact requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BRANDS SECTION ===== -->
+  <section id="brands" class="section brands-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Our Partners</div>
+        <h2 class="section-title">Trusted <span class="gradient-text">Brand Portfolio</span></h2>
+        <p class="section-desc">We are authorised dealers for India's most reputed electrical brands.</p>
+      </div>
+      <div class="brands-grid">
+        <div class="brand-card" id="brand-havells">
+          <div class="brand-name">HAVELLS</div>
+          <div class="brand-tagline">Switch to Better</div>
+        </div>
+        <div class="brand-card" id="brand-crompton">
+          <div class="brand-name">CROMPTON</div>
+          <div class="brand-tagline">Greaves Everyday Life</div>
+        </div>
+        <div class="brand-card" id="brand-finolex">
+          <div class="brand-name">FINOLEX</div>
+          <div class="brand-tagline">Wires & Cables</div>
+        </div>
+        <div class="brand-card" id="brand-polycab">
+          <div class="brand-name">POLYCAB</div>
+          <div class="brand-tagline">Wires & Cables</div>
+        </div>
+        <div class="brand-card" id="brand-philips">
+          <div class="brand-name">PHILIPS</div>
+          <div class="brand-tagline">Lighting Solutions</div>
+        </div>
+        <div class="brand-card" id="brand-orient">
+          <div class="brand-name">ORIENT</div>
+          <div class="brand-tagline">Living Electricals</div>
+        </div>
+        <div class="brand-card" id="brand-usha">
+          <div class="brand-name">USHA</div>
+          <div class="brand-tagline">Be More</div>
+        </div>
+        <div class="brand-card" id="brand-legrand">
+          <div class="brand-name">LEGRAND</div>
+          <div class="brand-tagline">Life is On</div>
+        </div>
+        <div class="brand-card" id="brand-bajaj">
+          <div class="brand-name">BAJAJ</div>
+          <div class="brand-tagline">Electricals</div>
+        </div>
+        <div class="brand-card" id="brand-remi">
+          <div class="brand-name">REMI</div>
+          <div class="brand-tagline">Fans</div>
+        </div>
+        <div class="brand-card" id="brand-polar">
+          <div class="brand-name">POLAR</div>
+          <div class="brand-tagline">Winds of Change</div>
+        </div>
+        <div class="brand-card" id="brand-khaitan">
+          <div class="brand-name">KHAITAN</div>
+          <div class="brand-tagline">The Name is Enough</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Request a <span class="gradient-text">Free Quote</span></h2>
+        <p class="section-desc">Fill out the form below and our team will get back to you within 24 hours.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <h3 class="contact-info-title">Visit Our Showroom</h3>
+          <div class="contact-detail" id="contact-address">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-detail-label">Address</div>
+              <div class="contact-detail-value">Bafna House, No. 37/1, Chunnambukara St.<br />Vellore – 632004, Tamil Nadu, India</div>
+            </div>
+          </div>
+          <div class="contact-detail" id="contact-phone">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail-value">+91 416 2253321</div>
+            </div>
+          </div>
+          <div class="contact-detail" id="contact-mobile">
+            <div class="contact-icon">📱</div>
+            <div>
+              <div class="contact-detail-label">Mobile</div>
+              <div class="contact-detail-value">+91 94431 69360</div>
+            </div>
+          </div>
+          <div class="contact-detail" id="contact-email">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value">tamilnadelectricalkln@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-detail" id="contact-hours">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="contact-detail-label">Working Hours</div>
+              <div class="contact-detail-value">Mon – Sat: 10:00 AM – 8:00 PM<br /><span class="hours-note">Sunday: Holiday</span></div>
+            </div>
+          </div>
+          <!-- Map Embed -->
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9207893738!2d79.13236931744384!3d12.921870!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad382abc2b8f33%3A0xc26d1b71f7b42e10!2sVellore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1686000000000"
+              width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="TamilNadu Electronics Location Map"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="form-name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="form-phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="form-phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email Address</label>
+              <input type="email" id="form-email" name="email" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="form-address">Address / City</label>
+              <input type="text" id="form-address" name="address" placeholder="Your city or address" />
+            </div>
+            <div class="form-group">
+              <label for="form-product">Product Category <span class="required">*</span></label>
+              <select id="form-product" name="product" required>
+                <option value="" disabled selected>Select a product category</option>
+                <option value="fans">Fans</option>
+                <option value="wires">Wires & Cables</option>
+                <option value="switches">Switches & Sockets</option>
+                <option value="lights">LED Lights & Fittings</option>
+                <option value="switchgear">Switch Gears & MCBs</option>
+                <option value="appliances">Home Appliances</option>
+                <option value="plumbing">Plumbing & Hardware</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Your Message <span class="required">*</span></label>
+              <textarea id="form-message" name="message" rows="4" placeholder="Tell us what you need..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit" id="form-submit-btn">
+              <span id="submit-label">Send Enquiry</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="form-success" hidden>
+              <div class="success-icon">✅</div>
+              <div class="success-text">
+                <strong>Message Received!</strong><br />We'll get back to you within 24 hours.
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-icon">⚡</div>
+              <div class="logo-text">
+                <span class="logo-main">TamilNadu</span>
+                <span class="logo-sub">Electronics</span>
+              </div>
+            </div>
+            <p class="footer-tagline">"One Step Before Your Dream"</p>
+            <p class="footer-brand-desc">Bringing premium electrical products and home appliances to Vellore for over 50 years. Quality, trust, and service — always.</p>
+          </div>
+          <div class="footer-links-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#brands">Brands</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#products">Ceiling Fans</a></li>
+              <li><a href="#products">Wires & Cables</a></li>
+              <li><a href="#products">Switches & Sockets</a></li>
+              <li><a href="#products">LED Lights</a></li>
+              <li><a href="#products">Switch Gears</a></li>
+              <li><a href="#products">Home Appliances</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact-col">
+            <h4>Contact Info</h4>
+            <p>📍 Bafna House, No. 37/1,<br />Chunnambukara St., Vellore – 632004</p>
+            <p>📞 +91 416 2253321</p>
+            <p>📱 +91 94431 69360</p>
+            <p>✉️ tamilnadelectricalkln@gmail.com</p>
+            <p>🕐 Mon–Sat: 10 AM – 8 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">© 2026 TamilNadu Electronics, Vellore. All Rights Reserved.</p>
+        <p class="footer-made">Made with ⚡ for a brighter tomorrow</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
